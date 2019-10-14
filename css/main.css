@@ -1,0 +1,425 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+body {
+    font-family: 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
+}
+
+#cgvwrap {
+    min-width: 980px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cgv-ad-wrap {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background-color: #130101;
+    text-align: center;
+}
+
+.cgv-ad-wrap .cgv-ad-btn {
+    width: 980px;
+}
+
+.cgv-ad-wrap .cgv-ad-btn img {
+    width: inherit;
+    text-align: center;
+}
+
+.cgv-ad-wrap .close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.cgv-ad-wrap {
+    position: relative;
+
+}
+
+input[type='text'], input[type='password'] {
+    display: inline-block;
+    border: 1px solid #b5b5b5;
+}
+
+header {
+    background: url("../img/main/bg_header.gif") repeat-x 0 0;
+}
+
+header > .head {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header > .head > h1 {
+    position: absolute;
+    z-index: 100;
+    font-size: 100%;
+    left: 0;
+    width: 223px;
+    top: 40px;
+    height: 85px;
+    padding-top: 18px;
+    padding-left: 22px;
+    margin-bottom: 18px;
+}
+
+div[class^='sect-'] {
+    clear: both;
+    zoom: 1;
+}
+
+div[class^='sect-'] h2, header .im-wrap .lnb > h2, header .im-wrap .lnb #gnb_list li a, header .im-wrap .sect-srh legend, header .im-wrap .sect-phototicket > a {
+    font: 0/0 a;
+}
+
+header > .head > h1 a, #gnb_list li a {
+    display: block;
+}
+
+header > h1 img {
+    vertical-align: middle;
+}
+
+header .sect-service {
+    height: 30px;
+}
+
+header .sect-service .util {
+    float: left;
+    list-style: none;
+}
+
+header .sect-service .util li {
+    border-right: 1px solid #dddddd;
+}
+
+header .sect-service .util li, header .sect-service .gnb li, header .im-wrap .lnb #gnb_list li {
+    display: inline-block;
+    float: left;
+}
+
+header .sect-service li:first-child {
+    border-left: 0;
+}
+
+header .sect-service a {
+    display: block;
+    padding: 0 10px;
+}
+
+header .sect-service .util li a.app {
+    width: 74px;
+    background-position: 10px -714px;
+}
+
+header .sect-service .util li a.like {
+    width: 44px;
+    background-position: -85px -714px;
+}
+
+header .sect-service .util li a.insta {
+    width: 60px;
+    background-position: -263px -714px;
+}
+
+
+header .sect-service .util li a.frugal {
+    width: 85px;
+    background-position: -151px -714px;
+}
+
+header .sect-service li > a {
+    padding: 0 10px;
+}
+
+header .sect-service li > a, header .im-wrap .lnb #gnb_list > li > a, header .im-wrap .sect-phototicket > a {
+    background-image: url("../img/common_sprite_area_v4_2016.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 30px;
+    white-space: nowrap;
+}
+
+header .sect-service li a span {
+    visibility: hidden;
+}
+
+header .gnb {
+    float: right;
+}
+
+header .sect-service .gnb li:first-child {
+    background-image: none;
+}
+
+header .sect-service .gnb li {
+    background: url('../img/main/bg_v_line.gif') no-repeat 0 50%;
+    float: left;
+}
+
+header .sect-service .gnb li > a.login {
+    width: 29px;
+    background-position: 10px 9px;
+}
+
+header .sect-service .gnb li > a.join {
+    width: 39px;
+    background-position: -42px 9px;
+}
+
+header .sect-service .gnb li > a.mycgv {
+    width: 39px;
+    background-position: -103px 9px;
+}
+
+header .sect-service .gnb li > a.vip {
+    width: 62px;
+    background-position: -170px 9px;
+}
+
+header .sect-serv .gnb li > a.club {
+    width: 53px;
+    background-position: -254px 9px;
+}
+
+header .sect-service .gnb li > a.club {
+    width: 53px;
+    background-position: -254px 9px;
+}
+
+header .sect-service .gnb li > a.customer {
+    width: 38px;
+    background-position: -328px 9px;
+}
+
+header .sect-service .gnb li > a.showtimes {
+    width: 106px;
+    background-position: -388px 9px;
+}
+
+header .im-wrap {
+    position: relative;
+    height: 50px;
+    padding-top: 69px;
+}
+
+header .im-wrap > h2 {
+    position: absolute;
+    width: 428px;
+    height: 31px;
+    top: 28px;
+    left: 50%;
+    margin-left: -214px;
+    text-align: center;
+}
+
+header .im-wrap .lnb {
+    width: 376px;
+    margin: 0 auto;
+    clear: both;
+}
+
+header .im-wrap .lnb > h2 {
+    font: 0/0 a;
+    visibility: hidden;
+}
+
+header .im-wrap .lnb #gnb_list > li {
+    height: 35px;
+    position: relative;
+}
+
+header .im-wrap .lnb li {
+    display: inline-block;
+}
+
+header .im-wrap .lnb #gnb_list > li > a {
+    width: 60px;
+    height: 17px;
+}
+
+header .im-wrap .lnb #gnb_list li.movie > a {
+    background-position: 13px -28px;
+}
+
+header .im-wrap .lnb #gnb_list li.booking {
+    margin-left: 25px;
+}
+
+header .im-wrap .lnb #gnb_list li.booking > a {
+    background-position: -77px -28px;
+}
+
+header .im-wrap .lnb #gnb_list li.theaters {
+    margin-left: 25px;
+}
+
+header .im-wrap .lnb #gnb_list li.theaters > a {
+    background-position: -166px -28px;
+}
+
+header .im-wrap .lnb #gnb_list li.culture {
+    margin-left: 40px;
+}
+
+header .im-wrap .lnb #gnb_list li.culture > a {
+    width: 90px;
+    background-position: -517px -28px;
+}
+
+
+header .im-wrap .lnb #gnb_list .sub-wrap {
+    display: none;
+    left: -56px;
+    position: absolute;
+    top: 31px;
+    width: 164px;
+    padding: 3px;
+    background: url("../img/main/bg_smenu.png") repeat-y 0 0;
+}
+
+header .im-wrap .lnb #gnb_list > li:hover .sub-wrap {
+    display: block;
+}
+
+header .im-wrap .lnb #gnb_list .sub-wrap i {
+    display: block;
+    position: absolute;
+    width: 19px;
+    height: 10px;
+    left: 50%;
+    top: -10px;
+    margin-left: -9px;
+    background: url("../img/main/ico_smenu_arrow.png") no-repeat 0 0;
+}
+
+header .im-wrap .lnb #gnb_list .sub-wrap .smenu {
+    padding: 20px 15px;
+    border: 2px solid #828282;
+}
+
+
+div[class^='sect-']:after, header .im-wrap .lnb #gnb_list .sub-wrap .smenu:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+header .im-wrap .lnb #gnb_list .sub-wrap .smenu li > a {
+    display: block;
+    width: 130px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    text-decoration: none;
+}
+
+header .im-wrap .lnb #gnb_list .sub-wrap .smenu li > a:hover {
+    background: url('../img/main/ico_smenu_hand.png') no-repeat 100% 1px;
+    color: #e71a0f;
+}
+
+header .im-wrap .lnb #gnb_list .sub-wrap .smenu li {
+    margin-top: 15px;
+}
+
+header .im-wrap .lnb #gnb_list .sub-wrap .smenu li:first-child {
+    margin-top: 0;
+}
+
+header .im-wrap .lnb #gnb_list .sub-wrap .smenu li.last {
+    padding-top: 15px;
+    border-top: 2px solid #828282;
+}
+
+header .im-wrap .sect-srh {
+    position: absolute;
+    top: 65px;
+    left: 749px;
+    width: 141px;
+    height: 24px;
+}
+
+header .im-wrap .sect-srh input[type='text'] {
+    width: 100px;
+    height: 22px;
+    padding-right: 34px;
+    padding-left: 5px;
+}
+
+header .im-wrap .sect-srh > fieldset > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 31px;
+    height: 24px;
+    background-color: #e71a0f;
+    background-image: none;
+    color: #fff;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    font-size: 11px;
+}
+
+header .im-wrap .sect-srh input[type='text'] {
+    width: 100px;
+    height: 22px;
+    padding-right: 34px;
+    padding-left: 5px;
+}
+
+header .im-wrap .sect-phototicket {
+    margin-top: 30px;
+    top: -10px;
+    right: -1px;
+    position: absolute;
+}
+
+header .im-wrap .sect-phototicket > a {
+    display: block;
+    width: 91px;
+    height: 86px;
+    background-position: -364px -305px;
+}
+
+header .im-wrap .ad-partner {
+    position: absolute;
+    top: 16px;
+    left: 754px;
+}
+
+header .sect_txt_banner {
+    height: 80px;
+    background: #fefcef;
+}
+
+header .sect_txt_banner > .inner {
+    display: block;
+    width: 980px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+main, footer {
+    border: 1px solid gray;
+}
+
