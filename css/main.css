@@ -15,6 +15,15 @@ body {
     font-family: 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
 }
 
+h3 {
+    height: 41px;
+    margin: 30px 0 15px;
+    background: url("../img/main/bg_h3_line.jpg") repeat-x 0 50%;
+    line-height: 41px;
+    text-align: center;
+    font-weight: 500;
+}
+
 #cgvwrap {
     min-width: 980px;
     width: 100%;
@@ -60,7 +69,7 @@ header {
     background: url("../img/main/bg_header.gif") repeat-x 0 0;
 }
 
-header > .head {
+header > .head, main > #contents {
     width: 980px;
     margin: 0 auto;
     position: relative;
@@ -316,7 +325,7 @@ header .im-wrap .lnb #gnb_list .sub-wrap .smenu {
 }
 
 
-div[class^='sect-']:after, header .im-wrap .lnb #gnb_list .sub-wrap .smenu:after {
+div[class^='sect-']:after, header .im-wrap .lnb #gnb_list .sub-wrap .smenu:after, main > #contents > ul.tab-menu:after, main .sect-event > ul:after {
     content: '';
     clear: both;
     display: block;
@@ -419,7 +428,331 @@ header .sect_txt_banner > .inner {
     margin: 0 auto;
 }
 
-main, footer {
-    border: 1px solid gray;
+main {
+    background: url("../img/main/bg_c_bricks.png") repeat-x 0 0;
+    width: 100%;
 }
 
+main #contents {
+    clear: both;
+    padding-bottom: 50px;
+}
+
+main > #contents > .sect-common {
+    width: 980px;
+    height: 450px;
+}
+
+main > #contents > .sect-common:before, main > #contents > .sect-common:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 14px;
+    height: 450px;
+}
+
+main > #contents > .sect-common:before {
+    background: url('../img/main/bg_bricks_before.png') no-repeat 0 0;
+    left: 0;
+}
+
+main > #contents > .sect-common:after {
+    background: url('../img/main/bg_bricks_after.png') no-repeat 0 0;
+    right: 0;
+}
+
+main .sect-common > .slider button.btn-pause, main .sect-common > .slider button.move {
+    background: url("../img/main/sprite_icon.png") no-repeat 0 -90px;
+    top: 415px;
+    width: 13px;
+    height: 13px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100%;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+main .sect-common > .slider > button.btn-pause {
+    left: 510px;
+    display: block;
+    background-position: -48px -90px;
+    font: 0/0 a;
+    z-index: 10;
+}
+
+main .sect-common > .slider > button.btn-pause {
+    background-position: -48px -90px;
+}
+
+main .sect-common > .slider > button.btn-play {
+    background-position: -48px -90px;
+}
+
+
+p.main_banner_text2 {
+    position: absolute;
+    font-size: 13px;
+    text-align: center;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+}
+
+p.main_banner_text2.type3 {
+    color: #29343d;
+    width: 247px;
+    left: 203px;
+    top: 250px;
+}
+
+main > #contents .slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+main .sect-common > .slider > .item-wrap > button[type='button'] {
+    display: block;
+}
+
+main .item-wrap {
+    display: inline-block;
+    float: left;
+}
+
+main .item-wrap.on > button[type='button'] {
+
+}
+
+
+main .item-wrap.on > button[type='button'] {
+    background-position: -16px -90px;
+}
+
+main .item-wrap:nth-of-type(1) > button[type='button'] {
+    left: 456px;
+}
+
+main .item-wrap:nth-of-type(2) > button[type='button'] {
+    left: 474px;
+}
+
+main .item-wrap:nth-of-type(3) > button[type='button'] {
+    left: 492px;
+}
+
+main .item-wrap a.item {
+    position: absolute;
+    z-index: 5;
+    width: 980px;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 1s, opacity 1s ease;
+}
+
+main .item-wrap.on a.item {
+    visibility: visible;
+    height: 450px;
+    max-height: 450px;
+    opacity: 1;
+}
+
+main .item-wrap a.item > img {
+    width: 100%;
+    height: 100%;
+}
+
+main .slider > button[type='button'] {
+    position: absolute;
+    background: url("../img/main/sprite_btn.png") no-repeat;
+    font: 0/0 a;
+    z-index: 10;
+}
+
+.slider > button.btn-prev, .slider > button.btn-next {
+    overflow: hidden;
+    top: 50%;
+    width: 26px;
+    height: 52px;
+    margin-top: -26px;
+    white-space: nowrap;
+}
+
+main .slider > button.btn-prev {
+    left: 19px;
+    background-position: 0 -97px;
+}
+
+main .slider > button.btn-next {
+    right: 19px;
+    background-position: -30px -97px;
+}
+
+main .cols-movie {
+    height: 388px;
+    overflow: hidden;
+    width: 980px;
+}
+
+main .cols-movie .col-slider {
+    float: left;
+    width: 733px;
+    height: 388px;
+}
+
+main .cols-movie .col-slider iframe {
+    width: 733px;
+    height: 388px;
+}
+
+main .cols-movie .col-ad {
+    float: right;
+    width: 240px;
+    height: 388px;
+}
+
+main ul.tab-menu {
+    clear: both;
+    text-align: center;
+    list-style: none;
+}
+
+main ul.tab-menu li {
+    display: inline-block;
+    margin-left: -4px;
+}
+
+main ul.tab-menu li:first-child {
+    padding-left: 18px;
+    background: url('../img/main/sprite_corner.png') no-repeat 0 -20px;
+}
+
+main ul.tab-menu li:last-child {
+    padding-right: 19px;
+    background: url('../img/main/ribon_right.png') no-repeat right 0;
+}
+
+main ul.tab-menu li:first-child a {
+    background: #e71a0f;
+}
+
+main ul.tab-menu li:first-child a:before {
+    content: '';
+    display: inline-block;
+    padding-right: 5px;
+    width: 26px;
+    height: 39px;
+    background: #e71a0f url("../img/main/ico_finger.png") 0 50% no-repeat;
+    vertical-align: top;
+}
+
+main ul.tab-menu li a {
+    background: #e71a0f url('../img/main/bg_tebmenu-line.gif') no-repeat 0 12px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 15px;
+    position: relative;
+    display: inline-block;
+    line-height: 39px;
+}
+
+main .sect-event {
+    min-height: 200px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #241d1e;
+}
+
+main .sect-event ul {
+    margin-top: 16px;
+    clear: both;
+}
+
+
+main .sect-event li {
+    float: left;
+    margin-left: 6.6px;
+}
+
+main .sect-event li:first-child {
+    float: left;
+    margin-left: 0;
+}
+
+main .cols-banner {
+    overflow: hidden;
+}
+
+main .cols-banner > .col-ad, main .cols-banner > .col-hd, main .cols-banner > .col-collage {
+    float: left;
+}
+
+main .cols-banner .box-com {
+    width: 228px;
+    height: 261px;
+    padding: 3px;
+    border: 3px solid #241d1e;
+}
+
+main .cols-banner .box-com .box-inner {
+    width: 226px;
+    height: 259px;
+    border: 1px solid #241d1e;
+    text-align: center;
+}
+
+main .cols-banner .box-com .box-inner a {
+    display: block;
+    width: 226px;
+    height: 259px;
+}
+
+main .cols-banner > .col-hd {
+    position: relative;
+    width: 486px;
+    height: 273px;
+    margin: 0 7px;
+}
+
+main .col-collage .box-com {
+    width: 228px;
+    height: 261px;
+    padding: 3px;
+    border: 3px solid #241d1e;
+}
+
+main .col-collage .box-com .box-inner {
+    width: 226px;
+    height: 259px;
+    border: 1px solid #241d1e;
+    text-align: center;
+}
+
+main .col-collage .box-com .box-inner a{
+    display: block;
+}
+
+
+
+footer {
+    background: url("../img/main/bg_footer_com.gif") repeat-x 0 100%;
+}
+
+footer .sect-ad {
+    width: auto;
+    text-align: center;
+    height: 240px;
+}
+
+footer .sect-ad a {
+    display: inline-block;
+}
+
+footer .sect-ad a img {
+    display: block;
+}
