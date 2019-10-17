@@ -628,6 +628,15 @@ main .cols-movie .col-ad {
     height: 388px;
 }
 
+main .cols-movie .col-ad a {
+    margin: 0;
+}
+
+main .cols-movie .col-ad img {
+    height: 388px;
+    width: 240px;
+}
+
 main ul.tab-menu {
     clear: both;
     text-align: center;
@@ -1029,7 +1038,8 @@ aside .aside-content-btm {
     background: url("../img/main/bg_aside_banner_bottom.png") no-repeat 0 100%;
 }
 
-aside .btn-top {
+aside .btn-top > a {
+    display: block;
     width: 116px;
     height: 72px;
     background: url("../img/main/btn_top.png") no-repeat 0 0;
